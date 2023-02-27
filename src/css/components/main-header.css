@@ -1,0 +1,61 @@
+@import "/assets/css/_variabled.css";
+@import "/assets/css/font.css";
+@import "/assets/css/reset.css";
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 56px;
+    top: 0;
+    left: 0;
+    background-color: var(--background-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    z-index: 2;
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-item-radio {
+    display: none;
+}
+
+.header-item-radio:checked+.header-item {
+    color: var(--accent-color);
+}
+
+.header-item {
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 16px;
+    cursor: pointer;
+    color: var(--sub-color);
+}
+
+.header-item:last-child {
+    margin-right: 0;
+}
+
+.header-menu {
+    font-size: 24px;
+    color: var(--accent-color);
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, var(--gradient-top) 0%, var(--gradient-midtop) 19%, var(--gradient-midbottom) 60%, var(--gradient-bottom) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.header-menu:hover {
+    transform: scale(1.075);
+}
+
+.header-menu:active {
+    transition: 150ms;
+    transform: scale(0.95);
+}

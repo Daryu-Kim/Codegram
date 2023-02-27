@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- (A) "USUAL" TITLE CHARSET DESCRIPTION VIEWPORT -->
+    <title>Lovit - 러빗</title>
+    <meta charset="utf-8">
+    <meta name="description" content="소개팅 프로그레시브 웹앱입니다.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+    <link rel="stylesheet" href="/assets/css/components/main-header.css">
+    <link rel="stylesheet" href="/assets/css/components/main-footer.css">
+    <link rel="stylesheet" href="/assets/css/views/main.css">
+
+    <!-- (B) ICONS & PLATFORM SPECIFIC -->
+    <!-- (B1) GOOD OLD FAVICON -->
+    <link rel="icon" href="favicon.png" type="image/png">
+
+    <!-- (B2) ANDROID/CHROME -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="white">
+
+    <!-- (B3) IOS APP ICON + MOBILE SAFARI -->
+    <link rel="apple-touch-icon" href="icon-512.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Hello World">
+
+    <!-- (B4) WINDOWS -->
+    <meta name="msapplication-TileImage" content="icon-512.png">
+    <meta name="msapplication-TileColor" content="#FFF">
+
+    <!-- (C) WEB APP MANIFEST -->
+    <!-- https://web.dev/add-manifest/ -->
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- (D) SERVICE WORKER -->
+    <script src="/assets/js/modules/worker.js"></script>
+
+    <!-- (E) STYLESHEET + JAVASCRIPT
+    <link rel="stylesheet" href="YOUR-STYLES.css">
+    <script defer src="YOUR-SCRIPTS.js"></script>
+    -->
+    <script src="https://kit.fontawesome.com/4110c1f003.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="header-list">
+                <input type="radio" name="header" id="header-recommend" class="header-item-radio" value="/assets/views/home/recommend.html" checked>
+                <label for="header-recommend" class="header-item">추천</label>
+                <input type="radio" name="header" id="header-near" class="header-item-radio" value="/assets/views/home/near.html">
+                <label for="header-near" class="header-item">근처</label>
+                <input type="radio" name="header" id="header-live" class="header-item-radio" value="/assets/views/home/live.html">
+                <label for="header-live" class="header-item">라이브</label>
+            </div>
+            <i class="fa-solid fa-shop header-menu"></i>
+        </div>
+
+        <div class="content">
+            <object data="/assets/views/home/recommend.html" type="text/html" class="content-object"></object>
+        </div>
+
+        
+
+        <div class="footer">
+            <input type="radio" name="footer" id="footer-home" class="footer-item-radio" value="/assets/views/home/recommend.html" checked />
+            <label for="footer-home" class="footer-item-label">
+                <i class="fa-solid fa-house"></i>
+            </label>
+            <input type="radio" name="footer" id="footer-lounge" class="footer-item-radio" value="/assets/views/lounge.html" />
+            <label for="footer-lounge" class="footer-item-label">
+                <i class="fa-solid fa-mug-saucer"></i>
+            </label>
+            <input type="radio" name="footer" id="footer-request" class="footer-item-radio" value="/assets/views/request.html" />
+            <label for="footer-request" class="footer-item-label">
+                <i class="fa-solid fa-heart"></i>
+            </label>
+            <input type="radio" name="footer" id="footer-chat" class="footer-item-radio" value="/assets/views/chat.html" />
+            <label for="footer-chat" class="footer-item-label">
+                <i class="fa-solid fa-comments"></i>
+            </label>
+            <input type="radio" name="footer" id="footer-profile" class="footer-item-radio" value="/assets/views/profile.html" />
+            <label for="footer-profile" class="footer-item-label">
+                <i class="fa-solid fa-user"></i>
+            </label>
+        </div>
+    </div>
+    <script type="module" src="/assets/js/modules/_variabled.js"></script>
+    <script type="module" src="/assets/js/main.js"></script>
+</body>
+
+</html>

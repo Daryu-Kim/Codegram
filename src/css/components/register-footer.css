@@ -1,0 +1,23 @@
+@import "/assets/css/_variabled.css";
+@import "/assets/css/font.css";
+@import "/assets/css/reset.css";
+
+.footer {
+  width: 100%;
+  padding: 1.6rem 2.4rem;
+  position: absolute;
+  justify-content: space-between;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-submit {
+  border-radius: 0.8rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  padding: 1.2rem 0;
+  text-align: center;
+  background-color: var(--accent-color);
+  color: white;
+  cursor: pointer;
+}

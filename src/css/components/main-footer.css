@@ -1,0 +1,30 @@
+@import "@/css/_variabled.css";
+@import "@/css/font.css";
+@import "@/css/reset.css";
+
+.footer {
+  background-color: var(--background-color);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.footer * {
+  color: var(--sub-color);
+}
+
+.footer > hr {
+  border: none;
+  border-top: 1px solid var(--sub-deepdark-color);
+}
+
+.footer-register {
+  display: flex;
+  justify-content: center;
+  grid-gap: 0.4rem;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 2.4rem 0;
+}

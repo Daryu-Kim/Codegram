@@ -1,0 +1,70 @@
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.install-app-btn-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(60%);
+    height: fit-content;
+    background-color: white;
+    padding: 1.2rem 2.4rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    display: none;
+    text-align: center;
+}
+
+.install-app-btn-container * {
+    color: black;
+}
+
+.visible {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.install-app-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    word-break: keep-all;
+}
+
+.install-app-des {
+    font-size: 1.4rem;
+    font-weight: 500;
+    word-break: keep-all;
+    margin: 2rem 0;
+}
+
+.install-app-btn {
+    font-size: 1.6rem;
+    color: white;
+    background-image: linear-gradient(to right, var(--gradient-top) 0%, var(--gradient-midtop) 19%, var(--gradient-midbottom) 60%, var(--gradient-bottom) 100%);
+    padding: 0.6rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+
+.ios-share {
+    width: 3.2rem;
+    margin: 2rem 0;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+    .install-app-btn-container {
+        width: 35%;
+    }
+}
